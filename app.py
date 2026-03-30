@@ -25,6 +25,7 @@ if st.session_state.user_info is None:
     "Khoa học máy tính",
     "Hệ thống thông tin",
     "Mạng máy tính và truyền thông dữ liệu",
+    "Công nghệ thông tin định hướng thị trường Nhật Bản",
     "Công nghệ kỹ thuật điện tử – viễn thông",
     "Công nghệ kỹ thuật cơ điện tử",
     "Truyền thông và mạng máy tính",
