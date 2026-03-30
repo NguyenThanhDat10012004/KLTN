@@ -19,7 +19,26 @@ if st.session_state.user_info is None:
     
     with st.form("info_form"):
         c1, c2 = st.columns(2)
-        ten_nganh = c1.text_input("Ngành học", placeholder="VD: Công nghệ thông tin")
+        ten_nganh = c2.selectbox("Ngành học", [
+    "Công nghệ thông tin",
+    "Công nghệ kỹ thuật điện tử – truyền thông",
+    "Khoa học máy tính",
+    "Hệ thống thông tin",
+    "Mạng máy tính và truyền thông dữ liệu",
+    "Công nghệ kỹ thuật điện tử – viễn thông",
+    "Công nghệ kỹ thuật cơ điện tử",
+    "Truyền thông và mạng máy tính",
+    "Kỹ thuật máy tính",
+    "Kỹ thuật robot",
+    "Cơ kỹ thuật",
+    "Kỹ thuật điều khiển và tự động hóa",
+    "Vật lý kỹ thuật",
+    "Kỹ thuật năng lượng",
+    "Công nghệ hàng không vũ trụ",
+    "Công nghệ kỹ thuật xây dựng",
+    "Công nghệ nông nghiệp",
+    "Trí tuệ nhân tạo"
+])  
         nien_khoa = c1.text_input("Niên khóa", placeholder="VD: 2022")
         he_dao_tao = c2.selectbox("Hệ đào tạo", ["Chuẩn", "Chất lượng cao", "Khác"])
         
