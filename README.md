@@ -24,14 +24,12 @@ Backend chịu trách nhiệm load LLM vào VRAM và giao tiếp với Elasticse
 3. Cài đặt các thư viện cần thiết bằng cách chạy cell sau:
    ```bash
    !pip install fastapi uvicorn pyngrok nest-asyncio langchain_openai elasticsearch sentence_transformers FlagEmbedding vllm
-   
-```
+   ```
 4. Mở file `api.py` (hoặc file chứa code API tương ứng), tìm đến dòng `ngrok.set_auth_token("...")` và đảm bảo bạn đã điền Authtoken Ngrok của mình.
 5. Khởi chạy Backend bằng lệnh:
    ```bash
    !python api.py
-   
-```
+   ```
 6. Chờ vài phút để hệ thống tải trọng số các mô hình vào GPU. Khi thành công, terminal sẽ in ra dòng:
    `API ENDPOINT CỦA BẠN: https://<chuoi-ngau-nhien>.ngrok-free.dev/chat`
    *(Hãy COPY đường link này).*
@@ -42,21 +40,18 @@ Backend chịu trách nhiệm load LLM vào VRAM và giao tiếp với Elasticse
    ```python
    # Ví dụ:
    API_URL = "[https://1234abcd.ngrok-free.dev/chat](https://1234abcd.ngrok-free.dev/chat)"
-   
-```
+   ```
 3. Lưu file `ui.py`.
 4. Đảm bảo bạn đã có file `requirements.txt` trong thư mục `src/` (hoặc thư mục root) với nội dung sau để Streamlit nhận diện thư viện:
    ```text
    requests
-   
-```
+   ```
 5. Thực hiện commit và đẩy code mới nhất lên GitHub:
    ```bash
    git add .
    git commit -m "Update API URL and requirements"
    git push origin main
-   
-```
+   ```
 
 ### Bước 3: Deploy Giao diện lên Streamlit Community Cloud
 1. Truy cập [share.streamlit.io](https://share.streamlit.io/) và đăng nhập bằng tài khoản GitHub của bạn.
